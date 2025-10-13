@@ -55,3 +55,18 @@ body,
 strong {
   font-weight: 700;
 }
+
+@theme {
+  --color-error: #f6532b;
+  --color-success: #b5f400;
+  --color-highlight: #d1ecff;
+  --color-table-a: #c6dbda;
+  --color-table-b: #ffc5bf;
+  --color-table-c: #ecd5e3;
+  --color-table-d: #fae39d;
+  --color-table-e: #99aa8c;
+  --color-black: #2a1b07;
+  --color-darkgray: #374151;
+  --color-light: #fff;
+  --color-shadow: #e6e5e6;
+}
