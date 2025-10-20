@@ -46,7 +46,6 @@ html {
 body,
 * {
   font-family: "Inter", "Pretendard", sans-serif;
-  font-weight: 300;
   font-style: normal;
   font-optical-sizing: auto;
   color: #000;
@@ -56,7 +55,7 @@ strong {
   font-weight: 700;
 }
 
-@theme {
+:root {
   --color-error: #f6532b;
   --color-success: #b5f400;
   --color-highlight: #d1ecff;
@@ -65,8 +64,14 @@ strong {
   --color-table-c: #ecd5e3;
   --color-table-d: #fae39d;
   --color-table-e: #99aa8c;
-  --color-black: #2a1b07;
+  --color-black: #4d4d4d;
   --color-darkgray: #374151;
-  --color-light: #fff;
+  --color-light: #fdfdfd;
   --color-shadow: #e6e5e6;
+}
+
+:root flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

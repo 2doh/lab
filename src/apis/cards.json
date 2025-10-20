@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "color": "table-a",
+    "contentstype": "style",
+    "title": "Dark Mode"
+  },
+  {
+    "id": 2,
+    "color": "table-b",
+    "contentstype": "function",
+    "title": "IntersectionObserver"
+  },
+  {
+    "id": 3,
+    "color": "table-c",
+    "contentstype": "function",
+    "title": "Board"
+  },
+  {
+    "id": 4,
+    "color": "table-d",
+    "contentstype": "function",
+    "title": "Canvas API"
+  },
+  {
+    "id": 5,
+    "color": "table-e",
+    "contentstype": "function",
+    "title": "Web Speech API"
+  }
+]
