@@ -11,9 +11,9 @@ const page = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   return (
-    <div className="h-[46.8vw] max-h-[80vh] flex-center flex-col bg-red-100 transition-all duration-100 ease-in">
+    <div className="h-[46.8vw] max-h-[80vh] flex-center flex-col transition-all duration-100 ease-in">
       <Swiper
-        className="w-full h-[66.67vw] max-h-[80%] bg-blue-50 "
+        className="w-full h-[66.67vw] max-h-[80%] bg-highlight "
         slidesPerView={3}
         centeredSlides={true}
         loop={true}
