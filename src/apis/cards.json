@@ -3,30 +3,35 @@
     "id": 1,
     "color": "table-a",
     "contentstype": "style",
-    "title": "Dark Mode"
+    "title": "Dark Mode",
+    "address": "darkmode"
   },
   {
     "id": 2,
     "color": "table-b",
     "contentstype": "function",
-    "title": "IntersectionObserver"
+    "title": "IntersectionObserver",
+    "address": "intersectionobserver"
   },
   {
     "id": 3,
     "color": "table-c",
     "contentstype": "function",
-    "title": "Board"
+    "title": "Board",
+    "address": "board"
   },
   {
     "id": 4,
     "color": "table-d",
     "contentstype": "function",
-    "title": "Canvas API"
+    "title": "Canvas API",
+    "address": "canvas"
   },
   {
     "id": 5,
     "color": "table-e",
     "contentstype": "function",
-    "title": "Web Speech API"
+    "title": "Web Speech API",
+    "address": "webspeechapi"
   }
 ]

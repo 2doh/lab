@@ -5,11 +5,12 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import { Swiper, SwiperSlide } from "swiper/react";
 import cardData from "../apis/cards.json";
+import { useRouter } from "next/navigation";
 
 const page = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const swiperRef = useRef<any>(null);
-
+  const router = useRouter();
   return (
     <div className="relative h-[46.8vw] max-h-[80vh] flex-center flex-col transition-all duration-100 ease-in">
       <Swiper
@@ -39,6 +40,10 @@ const page = () => {
                       ? "scale(0.8)"
                       : "scale(0.6)",
                 transition: "transform 0.3 ease-in",
+                cursor: "pointer",
+              }}
+              onClick={() => {
+                router.push(item.address);
               }}
             >
               <CardFrame {...item}></CardFrame>
