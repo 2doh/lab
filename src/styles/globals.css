@@ -66,9 +66,10 @@ strong {
   --color-table-d: #fae39d;
   --color-table-e: #99aa8c;
   --color-black: #0d0d0d;
-  --color-darkgray: #374151;
+  --color-darkgray: #7e7e7e;
+  --color-lightgray: #ebebeb;
   --color-light: #fdfdfd;
-  --color-shadow: #e6e5e6;
+  --color-shadow: #c0bec0;
   --color-dark-surface: #2d2d2d;
 }
 
