@@ -12,7 +12,10 @@ const page = () => {
   const swiperRef = useRef<any>(null);
   const router = useRouter();
   return (
-    <div className="relative h-[46.8vw] max-h-[80vh] flex-center flex-col transition-all duration-100 ease-in">
+    <div
+      className="relative h-[46.8vw] max-h-[80vh]
+      flex-center flex-col transition-all duration-100 ease-in"
+    >
       <Swiper
         className="w-full h-[66.67vw] max-h-[80%]"
         slidesPerView={3}
@@ -30,7 +33,6 @@ const page = () => {
           );
           return (
             <SwiperSlide
-              className="bg-amber-200"
               key={index}
               style={{
                 transform:
