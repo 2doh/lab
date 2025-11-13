@@ -78,3 +78,5 @@ strong {
   justify-content: center;
   align-items: center;
 }
+
+@custom-variant dark (&:where(.dark, .dark *));

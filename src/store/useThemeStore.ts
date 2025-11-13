@@ -1,27 +1,21 @@
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
 
-export type ThemeMode = `lightMode` | `darkMode`;
+export type ThemeMode = boolean;
 
 interface ThemeState {
-  theme: ThemeMode;
+  theme: boolean;
   setTheme: () => void;
 }
 
 export const useThemeStore = create<ThemeState>()(
   persist(
     (set, get) => ({
-      theme: "lightMode",
+      theme: false,
       setTheme: () => {
-        const newTheme = get().theme === "lightMode" ? "darkMode" : "lightMode";
-        // Tailwind dark 클래스 적용
-        if (typeof window !== "undefined") {
-          document.documentElement.classList.toggle(
-            "dark",
-            newTheme === "darkMode",
-          );
-        }
-        set({ theme: newTheme });
+        const nextTheme = !get().theme;
+        document.documentElement.classList.toggle("dark", nextTheme);
+        set({ theme: nextTheme });
       },
     }),
     {

@@ -9,17 +9,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const theme = useThemeStore(state => state.theme);
-  const setTheme = useThemeStore(state => state.setTheme);
-
-  useEffect(() => {
-    // 페이지 로드 시 Tailwind dark 클래스 초기화
-    if (theme === "darkMode") {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-  }, [theme]);
   return (
     <html lang="ko">
       <body>

@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 
 const page = () => {
   const { theme, setTheme } = useThemeStore();
-  console.log(theme);
+  // console.log(theme);
 
   return (
     <div className="flex-center flex-col h-[46.8vw]">
@@ -16,7 +16,8 @@ const page = () => {
         <input
           type="checkbox"
           className="sr-only"
-          checked={theme === "darkMode"}
+          // 새로고침 시 다크모드가 true면 스위치 이동
+          checked={theme === true}
           onChange={() => setTheme()}
         />
         {/* 스위치 배경 */}
@@ -83,6 +84,7 @@ const page = () => {
           </div>
         </div>
       </label>
+      <div className="dark:w-[100px] dark:h-[100px] dark:bg-amber-200">123</div>
     </div>
   );
 };
