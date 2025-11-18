@@ -65,9 +65,15 @@ const page = () => {
           strokeWidth="1"
           strokeLinecap="round"
           strokeLinejoin="round"
-          className="text-darkgray transition-colors duration-200 w-full h-full"
+          className="text-darkgray transition-colors duration-200 w-full h-full
+          dark:text-light"
         >
-          <circle cx="12" cy="12" r="10" className="fill-light" />
+          <circle
+            cx="12"
+            cy="12"
+            r="10"
+            className="fill-light dark:fill-dark-surface"
+          />
           <path d="m10 8 4 4-4 4" />
         </svg>
       </button>
@@ -83,9 +89,15 @@ const page = () => {
           strokeWidth="1"
           strokeLinecap="round"
           strokeLinejoin="round"
-          className="text-darkgray transition-colors duration-200 w-full h-full"
+          className="text-darkgray transition-colors duration-200 w-full h-full
+          dark:text-light"
         >
-          <circle cx="12" cy="12" r="10" className="fill-light" />
+          <circle
+            cx="12"
+            cy="12"
+            r="10"
+            className="fill-light dark:fill-dark-surface"
+          />
           <path d="m14 16-4-4 4-4" />
         </svg>
       </button>

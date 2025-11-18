@@ -1,8 +1,7 @@
 import Footer from "@/components/layout/Footer";
 import Header from "@/components/layout/Header";
 import "../styles/globals.css";
-import { useThemeStore } from "@/store/useThemeStore";
-import { useEffect } from "react";
+import Provider from "./Provider";
 
 export default function RootLayout({
   children,
@@ -11,10 +10,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
-      <body>
-        <Header></Header>
-        {children}
-        <Footer></Footer>
+      <body className="dark:bg-black dark:text-light">
+        <Provider>
+          <Header></Header>
+          {children}
+          <Footer></Footer>
+        </Provider>
       </body>
     </html>
   );

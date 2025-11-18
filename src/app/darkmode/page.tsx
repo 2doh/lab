@@ -1,16 +1,14 @@
 "use client";
 
 import { useThemeStore } from "@/store/useThemeStore";
-import { useEffect, useState } from "react";
 
 const page = () => {
   const { theme, setTheme } = useThemeStore();
-  // console.log(theme);
 
   return (
     <div className="flex-center flex-col h-[46.8vw]">
       {/* input checkbox를 숨기고 label을 이용해 토글 스위치 모양 구현 */}
-      <label className="cursor-pointer group aspect-[500/200] max-w-[80%] w-[100%]">
+      <label className="cursor-pointer group aspect-[500/200] max-w-[40%] w-[100%]">
         {/* 토글 체크박스 */}
         {/* sr-only 클래스로 input 숨김 */}
         <input
@@ -84,7 +82,6 @@ const page = () => {
           </div>
         </div>
       </label>
-      <div className="dark:w-[100px] dark:h-[100px] dark:bg-amber-200">123</div>
     </div>
   );
 };
