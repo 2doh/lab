@@ -9,6 +9,9 @@ const Provider = ({ children }: { children: React.ReactNode }) => {
 
   useEffect(() => {
     setMounted(true);
+  }, []);
+
+  useEffect(() => {
     document.documentElement.classList.toggle("dark", theme);
   }, [theme]);
 

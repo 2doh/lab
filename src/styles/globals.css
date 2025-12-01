@@ -80,3 +80,22 @@ strong {
 }
 
 @custom-variant dark (&:where(.dark, .dark *));
+
+@keyframes dotBounce {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+}
+
+@utility animate-dot {
+  animation: dotBounce 1.2s infinite;
+}

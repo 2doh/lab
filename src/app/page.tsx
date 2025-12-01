@@ -1,11 +1,11 @@
 "use client";
 import CardFrame from "@/components/common/CardFrame";
+import { useRouter } from "next/navigation";
 import { useRef, useState } from "react";
 import "swiper/css";
 import "swiper/css/free-mode";
 import { Swiper, SwiperSlide } from "swiper/react";
 import cardData from "../apis/cards.json";
-import { useRouter } from "next/navigation";
 
 const page = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
