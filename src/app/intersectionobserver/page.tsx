@@ -55,20 +55,20 @@ const page = () => {
   }, []);
 
   return (
-    <div className="h-auto bg-amber-50 flex-center">
-      <div className="w-[90%] grid gap-1 grid-cols-[repeat(auto-fit,minmax(200px,1fr))]">
+    <div className="h-auto flex-center">
+      <div className="w-[90%] grid gap-1 grid-cols-[repeat(auto-fit,minmax(200px,1fr))] ">
         {product?.map(item => (
           <div
-            className="bg-amber-300 max-h-[420px] max-w-[240px] aspect-[260/420] flex flex-col items-center justify-between"
+            className=" md:h-[100%] md:max-h-[360px] sm:max-w-[240px] sm:aspect-[260/380] flex flex-col items-center bg-light"
             key={item.id}
           >
             <img
-              className="h-[60%] w-[100%] flex-center"
+              className=" w-[100%] flex-center bg-lightgray"
               src={item?.images[0]}
               alt="이미지"
             />
-            <div className="w-[100%] flex-center bg-amber-200 h-[100%] max-h-[120px]">
-              <div className="w-[90%] h-[100%] bg-amber-50">
+            <div className="w-[100%] flex justify-center max-h-[120px]">
+              <div className="w-[90%] h-[100%] ">
                 <p className="text-[11px] font-bold">{item?.brand}</p>
                 <p className="text-[13px]">{item?.title}</p>
                 {/* <p>{product?.description}</p> */}
