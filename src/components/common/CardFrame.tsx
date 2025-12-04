@@ -17,7 +17,7 @@ const CardFrame: React.FC<cardDataInterface> = data => {
   const bgColorClass = colorMap[data.color] ?? "bg-light";
 
   return (
-    <div className={`h-full relative ${bgColorClass}`}>
+    <div className={`aspect-square relative ${bgColorClass}`}>
       <div className="flex flex-col absolute bottom-[10%] w-[60%] left-[5%]">
         <span className="font-bold card-text lg:text-[clamp(1.2rem,(1.5vw+0.8rem),3rem)] sm:text-[clamp(0.8rem,(1vw+0.8rem),2rem)] text-[clamp(0.5rem,(0.5vw+0.5rem),1rem)]">
           #{data.id}

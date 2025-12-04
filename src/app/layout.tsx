@@ -13,7 +13,9 @@ export default function RootLayout({
       <body className="dark:bg-black dark:text-light">
         <Provider>
           <Header></Header>
-          {children}
+          <main className="flex-center">
+            <div className="max-w-[1440px] w-[100%] mt-5">{children}</div>
+          </main>
           <Footer></Footer>
         </Provider>
       </body>

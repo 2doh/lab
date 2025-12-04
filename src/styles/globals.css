@@ -13,12 +13,15 @@
   font-display: swap;
 }
 
-* {
-  margin: 0px;
-  padding: 0px;
-  outline-style: none;
-  box-sizing: border-box;
+@layer base {
+  * {
+    margin: 0px;
+    padding: 0px;
+    outline-style: none;
+    box-sizing: border-box;
+  }
 }
+
 a {
   /* color: #000000; */
   text-decoration: none;

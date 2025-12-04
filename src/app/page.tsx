@@ -14,10 +14,10 @@ const page = () => {
   return (
     <div
       className="relative h-[46.8vw] max-h-[80vh]
-      flex-center flex-col transition-all duration-100 ease-in"
+      flex-center transition-all duration-100 ease-in"
     >
       <Swiper
-        className="w-full h-[66.67vw] max-h-[80%]"
+        className="w-full "
         slidesPerView={3}
         centeredSlides={true}
         loop={true}

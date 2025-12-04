@@ -55,26 +55,28 @@ const page = () => {
   }, []);
 
   return (
-    <div className="h-auto p-[10%] bg-amber-50 flex-center">
-      <div className="w-[90%] grid gap-1 grid-cols-[repeat(auto-fit,minmax(150px,1fr))]">
+    <div className="h-auto bg-amber-50 flex-center">
+      <div className="w-[90%] grid gap-1 grid-cols-[repeat(auto-fit,minmax(200px,1fr))]">
         {product?.map(item => (
-          <div className="bg-amber-300 max-h-[420px] max-w-[240px] aspect-[240/420] flex flex-col items-center ">
+          <div
+            className="bg-amber-300 max-h-[420px] max-w-[240px] aspect-[260/420] flex flex-col items-center justify-between"
+            key={item.id}
+          >
             <img
-              className="h-[60%] w-[100%] flex flex-center"
+              className="h-[60%] w-[100%] flex-center"
               src={item?.images[0]}
               alt="이미지"
             />
-            <div className="w-[100%]">
-              <div className="flex flex-center flex-col">
-                <p>{item?.brand}</p>
-                <p>{item?.title}</p>
+            <div className="w-[100%] flex-center bg-amber-200 h-[100%] max-h-[120px]">
+              <div className="w-[90%] h-[100%] bg-amber-50">
+                <p className="text-[11px] font-bold">{item?.brand}</p>
+                <p className="text-[13px]">{item?.title}</p>
                 {/* <p>{product?.description}</p> */}
-                <div>
-                  <p>
-                    {item?.discountPercentage}%{item?.price}
-                  </p>
+                <div className="flex gap-1 text-[13px] font-bold">
+                  <p className="text-error">{item?.discountPercentage}%</p>
+                  <p>{item?.price}</p>
                 </div>
-                <p>{item?.tags}</p>
+                <p className="text-[11px] text-darkgray">{item?.tags}</p>
               </div>
             </div>
           </div>
